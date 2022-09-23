@@ -1,0 +1,87 @@
+@import "../../colors.scss";
+
+.Card {
+  width: 360px;
+  cursor: pointer;
+  margin-bottom: 45px;
+  background-color: transparent;
+  gap: 10px;
+}
+
+.Card-SM {
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 10px;
+  background-color: transparent;
+  gap: 10px;
+}
+
+.Card-Image {
+  width: 100%;
+  background-color: #999;
+  height: 202px;
+  flex: 1;
+}
+
+.Card-Image-SM {
+  width: 100%;
+  background-color: #999;
+  height: 130px;
+  flex: 1;
+}
+
+.Card-Details {
+  display: flex;
+  margin-top: 16px;
+  gap: 12px;
+  flex: 1;
+  align-items: center;
+}
+
+.Card-Details-SM {
+  display: flex;
+  margin-top: 0px;
+  gap: 12px;
+  flex: 1;
+  align-items: center;
+}
+
+.Channel-Image {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #999;
+}
+.Channel-Image-SM {
+  display: none;
+}
+
+.Title {
+  font-size: 14px;
+  color: map-get($darkTheme, "text");
+  text-overflow: ellipsis;
+  font-weight: 500;
+}
+.Channel-Name {
+  font-size: 12px;
+  color: map-get($darkTheme, "textSoft");
+  margin: 9px 0px;
+  text-overflow: ellipsis;
+}
+.Info {
+  font-size: 12px;
+  color: map-get($darkTheme, "textSoft");
+}
+
+//LIGHT THEME
+.Title.Light {
+  color: map-get($lightTheme, "text");
+  text-overflow: ellipsis;
+}
+.Channel-Name.Light {
+  color: map-get($lightTheme, "textSoft");
+  text-overflow: ellipsis;
+}
+.Info.Light {
+  color: map-get($lightTheme, "textSoft");
+}

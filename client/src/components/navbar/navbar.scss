@@ -1,0 +1,73 @@
+@import "../../colors.scss";
+.Nav-Container {
+  position: sticky;
+  top: 0;
+  background-color: map-get($darkTheme, "bgLighter");
+  height: 56px;
+  .Nav-Wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    height: 100%;
+    padding: 0px 20px;
+    .Nav-Search {
+      width: 40%;
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      margin: auto; //center horizontally
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px;
+      border: 1px solid map-get($darkTheme, "soft");
+      border-radius: 3px;
+      //   top: 50%;
+      //   left: 50%;
+      //   transform: translate(-50%, -50%);
+
+      .Nav-Input {
+        border: none;
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        outline: none;
+      }
+    }
+
+    .Nav-Sign-Btn {
+      padding: 5px 15px;
+      background-color: transparent;
+      border: 1px solid $login-btn-color;
+      color: $login-btn-color;
+      border-radius: 3px;
+      font-weight: 500;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+  }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 7.5px 0px;
+  font-size: 13px;
+  margin-right: 20px;
+}
+
+.Nav-Container.Light {
+  background-color: map-get($lightTheme, "bgLighter");
+}
+.Nav-Search.Light {
+  border: 1px solid map-get($lightTheme, "soft") !important;
+}
+
+.Nav-Search.Light.Input {
+  border: 1px solid map-get($lightTheme, "soft") !important;
+}

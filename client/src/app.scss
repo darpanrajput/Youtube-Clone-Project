@@ -1,0 +1,22 @@
+@import "./colors.scss";
+
+.Container {
+  display: flex;
+}
+
+.Main {
+  flex: 7;
+  background-color: map-get($darkTheme, "bg");
+  color: map-get($darkTheme, "text");
+}
+
+.Wrapper {
+  padding: 22px 99px;
+}
+
+// LIGHT THEME
+
+.Main.Light {
+  background-color: map-get($lightTheme, "bg");
+  color: map-get($lightTheme, "text");
+}

@@ -1,0 +1,37 @@
+@import "../../colors.scss";
+
+.New-Comment {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.Input {
+  border: none;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  padding: 5px;
+  border-bottom: 1px solid map-get($darkTheme, "soft");
+  &:focus {
+    color: map-get($darkTheme, "text");
+  }
+}
+.Avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+//LIGHT THEME
+
+.Input.Light {
+  border-bottom: 1px solid map-get($lightTheme, "soft");
+}
+.Input.Light:focus {
+  color: map-get($lightTheme, "text");
+}
+
+.Date.Light {
+  color: map-get($lightTheme, "textSoft") !important;
+}

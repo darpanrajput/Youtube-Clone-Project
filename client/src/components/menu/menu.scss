@@ -1,0 +1,85 @@
+@import "../../colors.scss";
+
+.Menu {
+  flex: 1.3;
+  background-color: map-get($darkTheme, "bgLighter");
+  height: 100vh;
+  color: map-get($darkTheme, "text");
+  font-size: 14px;
+  position: sticky;
+  top: 0;
+
+  .Menu-Items {
+    padding: 18px 26px;
+
+    .Logo {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-weight: bold;
+      margin-bottom: 25px;
+      img {
+        height: 25px;
+      }
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      cursor: pointer;
+      padding: 7.5px 10px;
+
+      &:hover {
+        background-color: map-get($darkTheme, "soft");
+      }
+    }
+    hr {
+      margin: 15px 0px;
+      border: 0.5px solid map-get($darkTheme, "soft");
+    }
+    .Title {
+      font-size: 14px;
+      font-weight: 500;
+      color: #aaaaaa;
+      margin-bottom: 20px;
+    }
+    .Login {
+      font-size: 14px;
+      button {
+        padding: 5px 15px;
+        background-color: transparent;
+        border: 1px solid $login-btn-color;
+        color: $login-btn-color;
+        border-radius: 3px;
+        font-weight: 500;
+        margin-top: 10px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+    }
+  }
+}
+
+.Menu:hover {
+  overflow: auto;
+}
+//LIGHT MODE
+
+.Menu.Light {
+  background-color: map-get($lightTheme, "bgLighter");
+  color: map-get($lightTheme, "text");
+  .Menu-Items {
+    hr {
+      border: 0.5px solid map-get($lightTheme, "soft");
+    }
+  }
+}
+
+.item.Light {
+  &:hover {
+    background-color: map-get($lightTheme, "soft") !important;
+  }
+}

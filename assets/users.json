@@ -1,0 +1,360 @@
+[{
+  "_id": {
+    "$oid": "62edf23682683c58766946fe"
+  },
+  "name": "Tanya Khanijow",
+  "email": "demo@gmail2.com",
+  "password": "$2b$10$qOC9JbQmNaqqxJUWsfdcS.UGvO7J47tRKaDYaRht/.4SDDDoYYapW",
+  "subscribers": 1,
+  "subscribedUsers": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1659761206748"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1663843415924"
+    }
+  },
+  "__v": 0,
+  "img": "https://yt3.ggpht.com/ytc/AMLnZu98ZeLlIsM5qkOOcK4dH6bcgvt5VDoNALQ5xVMs5Dc=s800-c-k-c0x00ffffff-no-rj"
+},{
+  "_id": {
+    "$oid": "62edfc154e76c04135e60201"
+  },
+  "name": "name1",
+  "email": "demo@gmail1.com",
+  "password": "$2b$10$e/CfASxTfhZAT2gN2e3G8.l4rAcLVE4MgfQXNukDanTgwpyJ.cdUy",
+  "subscribers": 0,
+  "subscribedUsers": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1659763733727"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1659763733727"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62f0cedabeb3cf7d7e77d64b"
+  },
+  "name": "आचार्य प्रशान्त - Acharya Prashant",
+  "email": "darpan@gmail.com",
+  "password": "$2b$10$ZeVrAKEvXn3DZ/NMILbw7.zxZFmpSyaot8oVQSrT2AROcituuvxrK",
+  "subscribers": 1,
+  "subscribedUsers": [
+    "62f201c5c576f97c96acea1a",
+    "62f2021ada284e6fa32dda7f",
+    "62f20251da284e6fa32dda84"
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1659948762474"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1663594430269"
+    }
+  },
+  "__v": 0,
+  "img": "https://yt3.ggpht.com/ytc/AMLnZu9Zdi_3L2FmC_GkH5982WsScpBkbV7UOhmRaX59RA=s800-c-k-c0x00ffffff-no-rj"
+},{
+  "_id": {
+    "$oid": "62f201c5c576f97c96acea1a"
+  },
+  "name": "BeerBiceps",
+  "email": "user1@gmail.com",
+  "password": "$2b$10$nKRzfz2YeQLCHnL8tt0qMO9.U7iSa6WeXqw3FP5gtnttuTYwSB.NW",
+  "subscribers": 4,
+  "subscribedUsers": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1660027333205"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661878852023"
+    }
+  },
+  "__v": 0,
+  "img": "https://yt3.ggpht.com/4syhBAa6d4sK_J8YxhRFHDyARee3qoR2bUtGMtRDyyVncFn41bSHUDf-FNmvcu3TD2JwowD8sA=s800-c-k-c0x00ffffff-no-rj"
+},{
+  "_id": {
+    "$oid": "62f2021ada284e6fa32dda7f"
+  },
+  "name": "https://yt3.ggpht.com/ytc/AMLnZu98ZeLlIsM5qkOOcK4dH6bcgvt5VDoNALQ5xVMs5Dc=s800-c-k-c0x00ffffff-no-rj",
+  "email": "user2@gmail.com",
+  "password": "$2b$10$cw.hiyf9BzHx5H3oe.NqCe2xpIUgoDbFmXch1usGyzVxa4EYvJzj6",
+  "subscribers": 1,
+  "subscribedUsers": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1660027418232"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1660028062547"
+    }
+  },
+  "__v": 0,
+  "img": "https://yt3.ggpht.com/ytc/AMLnZu98ZeLlIsM5qkOOcK4dH6bcgvt5VDoNALQ5xVMs5Dc=s800-c-k-c0x00ffffff-no-rj"
+},{
+  "_id": {
+    "$oid": "62f20251da284e6fa32dda84"
+  },
+  "name": "Radhesh Mellows",
+  "email": "user3@gmail.com",
+  "password": "$2b$10$DyrQJoE8eK9tPxPswNfsQ.FLMmMBSXoQgAHKJnSd8wOjkxi/52Kum",
+  "subscribers": 1,
+  "subscribedUsers": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1660027473795"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1660028076173"
+    }
+  },
+  "__v": 0,
+  "img": "https://yt3.ggpht.com/ytc/AMLnZu8eSzp0pFZ7-4QJQ2Q7bVoFq40Xew2iHUhy_OyHBA=s800-c-k-c0x00ffffff-no-rj"
+},{
+  "_id": {
+    "$oid": "62fc89e8998aaa3192e9a5b4"
+  },
+  "name": "Coddy Code",
+  "email": "coddycode31@gmail.com",
+  "img": "https://pbs.twimg.com/profile_images/1276168873226784768/oTUrXdo6_400x400.jpg",
+  "subscribers": 2,
+  "subscribedUsers": [
+    "62f201c5c576f97c96acea1a",
+    "62fc89e8998aaa3192e9a5b4"
+  ],
+  "fromGoogle": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1660717544555"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1663871697403"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6310e5d5d70e817d5a5705ce"
+  },
+  "name": "user5",
+  "email": "user5@gmail.com",
+  "password": "$2b$10$5az6jvJbUiQ1GLi8w8uYCe.xa6Q7NixCwWmZYj5Z6fdjGxwgkO3Te",
+  "subscribers": 1,
+  "subscribedUsers": [],
+  "fromGoogle": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662051797973"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1663592802414"
+    }
+  },
+  "__v": 0,
+  "img": "https://yt3.ggpht.com/fGvQjp1vAT1R4bAKTFLaSbdsfdYFDwAzVjeRVQeikH22bvHWsGULZdwIkpZXktcXZc5gFJuA3w=s800-c-k-c0x00ffffff-no-rj"
+},{
+  "_id": {
+    "$oid": "6311a41f204aa0daf6b133fd"
+  },
+  "name": "darpan.rajput",
+  "email": "darpan.rajput@outlook.com",
+  "password": "$2b$10$FR6MunJAzqsYg8zXQRMjeOR/WGFV7V5F0GTdD9/PYP52Cs5co9gyq",
+  "subscribers": 3,
+  "subscribedUsers": [
+    "632607b35f3c4c94513dc643",
+    "6311a41f204aa0daf6b133fd",
+    "6310e5d5d70e817d5a5705ce"
+  ],
+  "fromGoogle": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662100511206"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1663594440216"
+    }
+  },
+  "__v": 0,
+  "img": "https://yt3.ggpht.com/ytc/AMLnZu9tJzbO-YKbOSQFMJKRzJ0IPV9xh65U0B8cUItJXg=s800-c-k-c0x00ffffff-no-rj"
+},{
+  "_id": {
+    "$oid": "632600de5f3c4c94513dc410"
+  },
+  "name": "freelance developer",
+  "email": "freelancedevbusiness@gmail.com",
+  "img": "https://lh3.googleusercontent.com/a-/AFdZucpuIkUmcKoiQ_32GHSDZGdIiO_W9TK7LGMROtrT=s96-c",
+  "subscribers": 1,
+  "subscribedUsers": [],
+  "fromGoogle": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1663434974429"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1663871728302"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "632607b35f3c4c94513dc643"
+  },
+  "name": "patrick",
+  "email": "patrick@gmail.com",
+  "password": "$2b$10$2CKa0En9t4cIjy.peEuEQu0bwlteLB5R5fDFVSfhukY4t7Jmkjxjq",
+  "subscribers": 2,
+  "subscribedUsers": [
+    "6311a41f204aa0daf6b133fd",
+    "632607b35f3c4c94513dc643",
+    "62fc89e8998aaa3192e9a5b4",
+    "632600de5f3c4c94513dc410"
+  ],
+  "fromGoogle": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1663436723306"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1663871728270"
+    }
+  },
+  "__v": 0,
+  "img": "https://lumiere-a.akamaihd.net/v1/images/p_avatar_de27b20f.jpeg"
+},{
+  "_id": {
+    "$oid": "63286c412ee27225e5d6db47"
+  },
+  "email": "newUser@gmail.com",
+  "password": "$2b$10$YVF4adxk6zZwVlC8Van4P.06e8F.HJicEoSfn8LLkSqgqPXmuzi6e",
+  "subscribers": 0,
+  "subscribedUsers": [
+    "62f0cedabeb3cf7d7e77d64b",
+    "6311a41f204aa0daf6b133fd"
+  ],
+  "fromGoogle": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1663593537023"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1663594440182"
+    }
+  },
+  "__v": 0,
+  "name": "newUser"
+},{
+  "_id": {
+    "$oid": "63286ff32ee27225e5d6ddd3"
+  },
+  "name": "rahul",
+  "email": "rahul@gmail.com",
+  "password": "$2b$10$yaJUr63H/9JsaZqopD/czOVSUCbHw0gAi0g3xLhFRPVjTxK4Cq26y",
+  "subscribers": 0,
+  "subscribedUsers": [],
+  "fromGoogle": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1663594483064"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1663594483064"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6328723da747ed176a83fc1f"
+  },
+  "name": "iamuser",
+  "email": "iamuser@gmail.com",
+  "password": "$2b$10$/lixrCAde1H1fxeOICjHI.22aEhQ4abN1fgRwccCf/57cOmt8AMES",
+  "subscribers": 0,
+  "subscribedUsers": [
+    "62edf23682683c58766946fe"
+  ],
+  "fromGoogle": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1663595069335"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1663595106389"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63295e78ac28f680cd95531e"
+  },
+  "name": "john",
+  "email": "john@gmail.com",
+  "password": "$2b$10$44r4TdHr6JEvA1NGgcGD1On7nlVS5ArF4OwtVoyb2Jaea7EeH4mPa",
+  "subscribers": 0,
+  "subscribedUsers": [],
+  "fromGoogle": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1663655544802"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1663655544802"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "632cab76ae1e7d730e12b3ee"
+  },
+  "name": "demo_user",
+  "email": "demo_user@gmail.com",
+  "password": "$2b$10$sDdvVLmN6iD6B3gh8Y/4u.dz1.urUGjQwfDE4fcm8INHcQF8A2nRq",
+  "subscribers": 0,
+  "subscribedUsers": [],
+  "fromGoogle": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1663871862641"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1663871862641"
+    }
+  },
+  "__v": 0
+}]

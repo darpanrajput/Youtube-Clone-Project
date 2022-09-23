@@ -1,0 +1,1781 @@
+{
+	"info": {
+		"_postman_id": "15a38b6f-b3a4-4314-ac4e-34e363865850",
+		"name": "Youtube Clone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21767319"
+	},
+	"item": [
+		{
+			"name": "Authentictaion",
+			"item": [
+				{
+					"name": "Signup request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\":\"patrick\",\r\n  \"email\":\"patrick@gmail.com\",\r\n  \"password\":\"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/auths/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"auths",
+								"signup"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Signup request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\":\"darpan\",\r\n  \"email\":\"darpan@gmail.com\",\r\n  \"password\":\"password\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8800/api/auths/signup",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8800",
+									"path": [
+										"api",
+										"auths",
+										"signup"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "317"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"13d-ui3naL7eJrlNq1/ur7u95aZ6L/g\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 08 Aug 2022 07:23:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"user has been created\",\n    \"user\": {\n        \"name\": \"darpan\",\n        \"email\": \"darpan@gmail.com\",\n        \"password\": \"$2b$10$.kQN8skW94uR3YT21pBNyu.2tYCUpIaiSAV/Qp/Q6K6yAKqk3TYLu\",\n        \"subscribers\": 0,\n        \"subscribedUsers\": [],\n        \"_id\": \"62f0b9eb1910c4b993be7bfc\",\n        \"createdAt\": \"2022-08-08T07:23:23.670Z\",\n        \"updatedAt\": \"2022-08-08T07:23:23.670Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Signin Reqeuest",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\":\"darpan@gmail.com\",\r\n  \"password\":\"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/auths/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"auths",
+								"signin"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Signin Reqeuest",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"darpan@gmail.com\",\r\n    \"password\": \"password\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8800/api/auths/signin",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8800",
+									"path": [
+										"api",
+										"auths",
+										"signin"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyZjBiOWViMTkxMGM0Yjk5M2JlN2JmYyIsImlhdCI6MTY1OTk0MzYzOH0.gky_u9Xba3hQwF_BsylMyZebAYBYY3wzt9w-IG1CaJ8; Path=/; HttpOnly"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "200"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c8-ErEGxe/jHIRHA7JdPm9vmdSBWxk\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 08 Aug 2022 07:27:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"62f0b9eb1910c4b993be7bfc\",\n    \"name\": \"darpan\",\n    \"email\": \"darpan@gmail.com\",\n    \"subscribers\": 0,\n    \"subscribedUsers\": [],\n    \"createdAt\": \"2022-08-08T07:23:23.670Z\",\n    \"updatedAt\": \"2022-08-08T07:23:23.670Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\":\"darpan\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/users/62f0cedabeb3cf7d7e77d64b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"users",
+								"62f0cedabeb3cf7d7e77d64b"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update User",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "access-token",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMjYwN2IzNWYzYzRjOTQ1MTNkYzY0MyIsImlhdCI6MTY2MzgzNzQ5M30.r-AYN9fj30StfyDXL2itw5ahE7GY7j6gHyMkqJHE17U",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\":\"darpan\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8800/api/users/62f0b9eb1910c4b993be7bfc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8800",
+									"path": [
+										"api",
+										"users",
+										"62f0b9eb1910c4b993be7bfc"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "274"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"112-3IEWwKWgAKGy/f2cB+aWtAlSMmo\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 08 Aug 2022 08:41:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"62f0b9eb1910c4b993be7bfc\",\n    \"name\": \"darpan\",\n    \"email\": \"darpan@gmail.com\",\n    \"password\": \"$2b$10$.kQN8skW94uR3YT21pBNyu.2tYCUpIaiSAV/Qp/Q6K6yAKqk3TYLu\",\n    \"subscribers\": 0,\n    \"subscribedUsers\": [],\n    \"createdAt\": \"2022-08-08T07:23:23.670Z\",\n    \"updatedAt\": \"2022-08-08T08:41:41.258Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/users/62f0b9eb1910c4b993be7bfc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"users",
+								"62f0b9eb1910c4b993be7bfc"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete User",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8800/api/users/62f0b9eb1910c4b993be7bfc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8800",
+									"path": [
+										"api",
+										"users",
+										"62f0b9eb1910c4b993be7bfc"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "35"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"23-kl+VB0S8brBLPbUOm1YdWa0YhWI\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 08 Aug 2022 08:51:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "\"darpan@gmail.com has been deleted\""
+						}
+					]
+				},
+				{
+					"name": "Find A User",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/users/find/62f201c5c576f97c96acea1a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"users",
+								"find",
+								"62f201c5c576f97c96acea1a"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Find A User",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8800/api/users/find/62f0cedabeb3cf7d7e77d64b",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8800",
+									"path": [
+										"api",
+										"users",
+										"find",
+										"62f0cedabeb3cf7d7e77d64b"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "274"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"112-S6cSTHeS+/NPMA3ANI/6xNG5BUE\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 08 Aug 2022 09:00:13 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"62f0cedabeb3cf7d7e77d64b\",\n    \"name\": \"darpan\",\n    \"email\": \"darpan@gmail.com\",\n    \"password\": \"$2b$10$ZeVrAKEvXn3DZ/NMILbw7.zxZFmpSyaot8oVQSrT2AROcituuvxrK\",\n    \"subscribers\": 0,\n    \"subscribedUsers\": [],\n    \"createdAt\": \"2022-08-08T08:52:42.474Z\",\n    \"updatedAt\": \"2022-08-08T08:53:25.744Z\",\n    \"__v\": 0\n}"
+						},
+						{
+							"name": "Find A User-Failed",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8800/api/users/find/62f0cedabeb3cf7d7e77d64b1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8800",
+									"path": [
+										"api",
+										"users",
+										"find",
+										"62f0cedabeb3cf7d7e77d64b1"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "155"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"9b-cq7kDj5GonXKInI2AJkWlcdDlt4\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 08 Aug 2022 09:00:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"status\": 500,\n    \"message\": \"Cast to ObjectId failed for value \\\"62f0cedabeb3cf7d7e77d64b1\\\" (type string) at path \\\"_id\\\" for model \\\"User\\\"\"\n}"
+						}
+					]
+				},
+				{
+					"name": "subscribe a channel",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8800/api/users/sub/62f201c5c576f97c96acea1a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"users",
+								"sub",
+								"62f201c5c576f97c96acea1a"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "subscribe a channel",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8800/api/users/sub/62f201c5c576f97c96acea1a",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8800",
+									"path": [
+										"api",
+										"users",
+										"sub",
+										"62f201c5c576f97c96acea1a"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "26"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1a-v6LwKJNFclL/GI6Kia7M0pSsVvY\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 09 Aug 2022 06:53:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "\"Subsrciption Successfull\""
+						}
+					]
+				},
+				{
+					"name": "Like A Video",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "access-token",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMjYwN2IzNWYzYzRjOTQ1MTNkYzY0MyIsImlhdCI6MTY2MzgzNzQ5M30.r-AYN9fj30StfyDXL2itw5ahE7GY7j6gHyMkqJHE17U",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8800/api/users/like/62f201f6c576f97c96acea1e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"users",
+								"like",
+								"62f201f6c576f97c96acea1e"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Like A Video",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "access-token",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMjYwN2IzNWYzYzRjOTQ1MTNkYzY0MyIsImlhdCI6MTY2MzgzNzQ5M30.r-AYN9fj30StfyDXL2itw5ahE7GY7j6gHyMkqJHE17U",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8800/api/users/like/62f201f6c576f97c96acea1e",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8800",
+									"path": [
+										"api",
+										"users",
+										"like",
+										"62f201f6c576f97c96acea1e"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "360"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"168-VnOr+SOwxwEX+ErqaFImpF+cLCY\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 14 Aug 2022 05:06:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"liked\",\n    \"video\": {\n        \"_id\": \"62f201f6c576f97c96acea1e\",\n        \"userId\": \"62f201c5c576f97c96acea1a\",\n        \"title\": \"test video from user1\",\n        \"desc\": \"tes video desc\",\n        \"imgUrl\": \"image\",\n        \"videoUrl\": \"videoUrl\",\n        \"views\": 0,\n        \"tags\": [\n            \"tutorial\"\n        ],\n        \"likes\": [\n            \"62f0cedabeb3cf7d7e77d64b\"\n        ],\n        \"dislikes\": [],\n        \"createdAt\": \"2022-08-09T06:43:02.534Z\",\n        \"updatedAt\": \"2022-08-14T05:06:25.632Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "DisLike A Video",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8800/api/users/dislike/62f201f6c576f97c96acea1e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"users",
+								"dislike",
+								"62f201f6c576f97c96acea1e"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "DisLike A Video",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8800/api/users/dislike/62f201f6c576f97c96acea1e",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8800",
+									"path": [
+										"api",
+										"users",
+										"dislike",
+										"62f201f6c576f97c96acea1e"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "363"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"16b-7U6X2SE95ZuHUg2vYNLAQipIJkE\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 14 Aug 2022 05:06:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"disliked\",\n    \"video\": {\n        \"_id\": \"62f201f6c576f97c96acea1e\",\n        \"userId\": \"62f201c5c576f97c96acea1a\",\n        \"title\": \"test video from user1\",\n        \"desc\": \"tes video desc\",\n        \"imgUrl\": \"image\",\n        \"videoUrl\": \"videoUrl\",\n        \"views\": 0,\n        \"tags\": [\n            \"tutorial\"\n        ],\n        \"likes\": [],\n        \"dislikes\": [\n            \"62f0cedabeb3cf7d7e77d64b\"\n        ],\n        \"createdAt\": \"2022-08-09T06:43:02.534Z\",\n        \"updatedAt\": \"2022-08-14T05:06:31.827Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Videos",
+			"item": [
+				{
+					"name": "Add Videos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Marvel Studios' Doctor Strange in the Multiverse of Madness | Official Trailer\",\r\n    \"desc\": \"Enter a new dimension of Strange. Watch the official trailer for Marvel Studios' Doctor Strange in the Multiverse of Madness. Only in theaters May 6.In Marvel Studios’ “Doctor Strange in the Multiverse of Madness,” the MCU unlocks the Multiverse and pushes its boundaries further than ever before. Journey into the unknown with Doctor Strange, who, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary.Doctor Strange in the Multiverse of Madness” stars Benedict Cumberbatch, Chiwetel Ejiofor, Elizabeth Olsen, Benedict Wong, Xochitl Gomez, with Michael Stühlbarg, and Rachel McAdams.The film is directed by Sam Raimi, and Kevin Feige is the producer. Louis D’Esposito, Victoria Alonso, Eric Hauserman Carroll and Jamie Christopher serve as executive producers. The screenplay was written by Michael Waldron.\",\r\n    \"imgUrl\": \"https://i3.ytimg.com/vi/aWzlQ2N6qqg/maxresdefault.jpg\",\r\n    \"videoUrl\": \"https://www.youtube.com/watch?v=aWzlQ2N6qqg\",\r\n    \"views\": 78945,\r\n    \"tags\": [\"tutorial\"],\r\n    \"likes\": [],\r\n    \"dislikes\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/videos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"videos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add Videos",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"test video from user2\",\r\n    \"desc\": \"test video desc from user2\",\r\n    \"imgUrl\": \"image\",\r\n    \"videoUrl\": \"videoUrl\",\r\n    \"views\": 0,\r\n    \"tags\": [\"tutorial\"],\r\n    \"likes\": [\"9\"],\r\n    \"dislikes\": [\"4\"]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8800/api/videos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8800",
+									"path": [
+										"api",
+										"videos"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "324"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"144-pS2zE8TLmicoW2GGT0hUSnlE9ig\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 09 Aug 2022 06:44:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"userId\": \"62f2021ada284e6fa32dda7f\",\n    \"title\": \"test video from user2\",\n    \"desc\": \"test video desc from user2\",\n    \"imgUrl\": \"image\",\n    \"videoUrl\": \"videoUrl\",\n    \"views\": 0,\n    \"tags\": [\n        \"tutorial\"\n    ],\n    \"likes\": [\n        \"9\"\n    ],\n    \"dislikes\": [\n        \"4\"\n    ],\n    \"_id\": \"62f20231da284e6fa32dda82\",\n    \"createdAt\": \"2022-08-09T06:44:01.660Z\",\n    \"updatedAt\": \"2022-08-09T06:44:01.660Z\",\n    \"__v\": 0\n}"
+						},
+						{
+							"name": "Add Marvel Videos",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"Marvel Studios' Doctor Strange in the Multiverse of Madness | Official Trailer\",\r\n    \"desc\": \"Enter a new dimension of Strange. Watch the official trailer for Marvel Studios' Doctor Strange in the Multiverse of Madness. Only in theaters May 6.In Marvel Studios’ “Doctor Strange in the Multiverse of Madness,” the MCU unlocks the Multiverse and pushes its boundaries further than ever before. Journey into the unknown with Doctor Strange, who, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary.Doctor Strange in the Multiverse of Madness” stars Benedict Cumberbatch, Chiwetel Ejiofor, Elizabeth Olsen, Benedict Wong, Xochitl Gomez, with Michael Stühlbarg, and Rachel McAdams.The film is directed by Sam Raimi, and Kevin Feige is the producer. Louis D’Esposito, Victoria Alonso, Eric Hauserman Carroll and Jamie Christopher serve as executive producers. The screenplay was written by Michael Waldron.\",\r\n    \"imgUrl\": \"https://i3.ytimg.com/vi/aWzlQ2N6qqg/maxresdefault.jpg\",\r\n    \"videoUrl\": \"https://www.youtube.com/watch?v=aWzlQ2N6qqg\",\r\n    \"views\": 78945,\r\n    \"tags\": [\"tutorial\"],\r\n    \"likes\": [],\r\n    \"dislikes\": []\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8800/api/videos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8800",
+									"path": [
+										"api",
+										"videos"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1370"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"55a-qDAcZl2oiJ6qHVRy3Mrm0ogPkYM\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 01 Sep 2022 17:03:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"userId\": \"6310e5d5d70e817d5a5705ce\",\n    \"title\": \"Marvel Studios' Doctor Strange in the Multiverse of Madness | Official Trailer\",\n    \"desc\": \"Enter a new dimension of Strange. Watch the official trailer for Marvel Studios' Doctor Strange in the Multiverse of Madness. Only in theaters May 6.In Marvel Studios’ “Doctor Strange in the Multiverse of Madness,” the MCU unlocks the Multiverse and pushes its boundaries further than ever before. Journey into the unknown with Doctor Strange, who, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary.Doctor Strange in the Multiverse of Madness” stars Benedict Cumberbatch, Chiwetel Ejiofor, Elizabeth Olsen, Benedict Wong, Xochitl Gomez, with Michael Stühlbarg, and Rachel McAdams.The film is directed by Sam Raimi, and Kevin Feige is the producer. Louis D’Esposito, Victoria Alonso, Eric Hauserman Carroll and Jamie Christopher serve as executive producers. The screenplay was written by Michael Waldron.\",\n    \"imgUrl\": \"https://i3.ytimg.com/vi/aWzlQ2N6qqg/maxresdefault.jpg\",\n    \"videoUrl\": \"https://www.youtube.com/watch?v=aWzlQ2N6qqg\",\n    \"views\": 78945,\n    \"tags\": [\n        \"tutorial\"\n    ],\n    \"likes\": [],\n    \"dislikes\": [],\n    \"_id\": \"6310e5efd70e817d5a5705d1\",\n    \"createdAt\": \"2022-09-01T17:03:43.354Z\",\n    \"updatedAt\": \"2022-09-01T17:03:43.354Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "get subcribed videos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/videos/sub",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"videos",
+								"sub"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get subcribed videos withoud flat array",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8800/api/videos/sub",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8800",
+									"path": [
+										"api",
+										"videos",
+										"sub"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1283"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"503-l5r0ZWe24kICoo37trvAzor68yM\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 09 Aug 2022 07:10:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    [\n        {\n            \"_id\": \"62f201f6c576f97c96acea1e\",\n            \"userId\": \"62f201c5c576f97c96acea1a\",\n            \"title\": \"test video from user1\",\n            \"desc\": \"tes video desc\",\n            \"imgUrl\": \"image\",\n            \"videoUrl\": \"videoUrl\",\n            \"views\": 0,\n            \"tags\": [\n                \"tutorial\"\n            ],\n            \"likes\": [\n                \"9\"\n            ],\n            \"dislikes\": [\n                \"4\"\n            ],\n            \"createdAt\": \"2022-08-09T06:43:02.534Z\",\n            \"updatedAt\": \"2022-08-09T06:43:02.534Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"62f2020cda284e6fa32dda7d\",\n            \"userId\": \"62f201c5c576f97c96acea1a\",\n            \"title\": \"test video from user1\",\n            \"desc\": \"tes video desc\",\n            \"imgUrl\": \"image\",\n            \"videoUrl\": \"videoUrl\",\n            \"views\": 0,\n            \"tags\": [\n                \"tutorial\"\n            ],\n            \"likes\": [\n                \"9\"\n            ],\n            \"dislikes\": [\n                \"4\"\n            ],\n            \"createdAt\": \"2022-08-09T06:43:24.093Z\",\n            \"updatedAt\": \"2022-08-09T06:43:24.093Z\",\n            \"__v\": 0\n        }\n    ],\n    [\n        {\n            \"_id\": \"62f20231da284e6fa32dda82\",\n            \"userId\": \"62f2021ada284e6fa32dda7f\",\n            \"title\": \"test video from user2\",\n            \"desc\": \"test video desc from user2\",\n            \"imgUrl\": \"image\",\n            \"videoUrl\": \"videoUrl\",\n            \"views\": 0,\n            \"tags\": [\n                \"tutorial\"\n            ],\n            \"likes\": [\n                \"9\"\n            ],\n            \"dislikes\": [\n                \"4\"\n            ],\n            \"createdAt\": \"2022-08-09T06:44:01.660Z\",\n            \"updatedAt\": \"2022-08-09T06:44:01.660Z\",\n            \"__v\": 0\n        }\n    ],\n    [\n        {\n            \"_id\": \"62f20264da284e6fa32dda87\",\n            \"userId\": \"62f20251da284e6fa32dda84\",\n            \"title\": \"test video from user3\",\n            \"desc\": \"test video desc from user3\",\n            \"imgUrl\": \"image\",\n            \"videoUrl\": \"videoUrl\",\n            \"views\": 0,\n            \"tags\": [\n                \"tutorial\"\n            ],\n            \"likes\": [\n                \"9\"\n            ],\n            \"dislikes\": [\n                \"4\"\n            ],\n            \"createdAt\": \"2022-08-09T06:44:52.981Z\",\n            \"updatedAt\": \"2022-08-09T06:44:52.981Z\",\n            \"__v\": 0\n        }\n    ]\n]"
+						},
+						{
+							"name": "get subcribed videos with flat objects",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8800/api/videos/sub",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8800",
+									"path": [
+										"api",
+										"videos",
+										"sub"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1277"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4fd-Y3frfoJmUAs3+3DOV7VuP0oBT60\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 09 Aug 2022 07:13:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"62f201f6c576f97c96acea1e\",\n        \"userId\": \"62f201c5c576f97c96acea1a\",\n        \"title\": \"test video from user1\",\n        \"desc\": \"tes video desc\",\n        \"imgUrl\": \"image\",\n        \"videoUrl\": \"videoUrl\",\n        \"views\": 0,\n        \"tags\": [\n            \"tutorial\"\n        ],\n        \"likes\": [\n            \"9\"\n        ],\n        \"dislikes\": [\n            \"4\"\n        ],\n        \"createdAt\": \"2022-08-09T06:43:02.534Z\",\n        \"updatedAt\": \"2022-08-09T06:43:02.534Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62f2020cda284e6fa32dda7d\",\n        \"userId\": \"62f201c5c576f97c96acea1a\",\n        \"title\": \"test video from user1\",\n        \"desc\": \"tes video desc\",\n        \"imgUrl\": \"image\",\n        \"videoUrl\": \"videoUrl\",\n        \"views\": 0,\n        \"tags\": [\n            \"tutorial\"\n        ],\n        \"likes\": [\n            \"9\"\n        ],\n        \"dislikes\": [\n            \"4\"\n        ],\n        \"createdAt\": \"2022-08-09T06:43:24.093Z\",\n        \"updatedAt\": \"2022-08-09T06:43:24.093Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62f20231da284e6fa32dda82\",\n        \"userId\": \"62f2021ada284e6fa32dda7f\",\n        \"title\": \"test video from user2\",\n        \"desc\": \"test video desc from user2\",\n        \"imgUrl\": \"image\",\n        \"videoUrl\": \"videoUrl\",\n        \"views\": 0,\n        \"tags\": [\n            \"tutorial\"\n        ],\n        \"likes\": [\n            \"9\"\n        ],\n        \"dislikes\": [\n            \"4\"\n        ],\n        \"createdAt\": \"2022-08-09T06:44:01.660Z\",\n        \"updatedAt\": \"2022-08-09T06:44:01.660Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62f20264da284e6fa32dda87\",\n        \"userId\": \"62f20251da284e6fa32dda84\",\n        \"title\": \"test video from user3\",\n        \"desc\": \"test video desc from user3\",\n        \"imgUrl\": \"image\",\n        \"videoUrl\": \"videoUrl\",\n        \"views\": 0,\n        \"tags\": [\n            \"tutorial\"\n        ],\n        \"likes\": [\n            \"9\"\n        ],\n        \"dislikes\": [\n            \"4\"\n        ],\n        \"createdAt\": \"2022-08-09T06:44:52.981Z\",\n        \"updatedAt\": \"2022-08-09T06:44:52.981Z\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Ramdom Videos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/videos/random",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"videos",
+								"random"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Ramdom Videos",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8800/api/videos/random",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8800",
+									"path": [
+										"api",
+										"videos",
+										"random"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "328"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"148-PtYzVUT/xD284rp4r6Ev6AEQ9PY\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 10 Aug 2022 06:39:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"62f2029cda284e6fa32dda8a\",\n        \"userId\": \"62f0cedabeb3cf7d7e77d64b\",\n        \"title\": \"test video from darpan\",\n        \"desc\": \"test video desc from darpan\",\n        \"imgUrl\": \"image\",\n        \"videoUrl\": \"videoUrl\",\n        \"views\": 0,\n        \"tags\": [\n            \"tutorial\"\n        ],\n        \"likes\": [\n            \"9\"\n        ],\n        \"dislikes\": [\n            \"4\"\n        ],\n        \"createdAt\": \"2022-08-09T06:45:48.231Z\",\n        \"updatedAt\": \"2022-08-09T06:45:48.231Z\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get trending Videos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8800/api/videos/trend",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"videos",
+								"trend"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get trending Videos",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8800/api/videos/trend",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8800",
+									"path": [
+										"api",
+										"videos",
+										"trend"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1604"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"644-9FYfj/MNnAo2Apqu5XlUBwMu6ok\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 10 Aug 2022 06:46:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"62f2029cda284e6fa32dda8a\",\n        \"userId\": \"62f0cedabeb3cf7d7e77d64b\",\n        \"title\": \"test video from darpan\",\n        \"desc\": \"test video desc from darpan\",\n        \"imgUrl\": \"image\",\n        \"videoUrl\": \"videoUrl\",\n        \"views\": 3,\n        \"tags\": [\n            \"tutorial\"\n        ],\n        \"likes\": [\n            \"9\"\n        ],\n        \"dislikes\": [\n            \"4\"\n        ],\n        \"createdAt\": \"2022-08-09T06:45:48.231Z\",\n        \"updatedAt\": \"2022-08-09T06:45:48.231Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62f201f6c576f97c96acea1e\",\n        \"userId\": \"62f201c5c576f97c96acea1a\",\n        \"title\": \"test video from user1\",\n        \"desc\": \"tes video desc\",\n        \"imgUrl\": \"image\",\n        \"videoUrl\": \"videoUrl\",\n        \"views\": 0,\n        \"tags\": [\n            \"tutorial\"\n        ],\n        \"likes\": [\n            \"9\"\n        ],\n        \"dislikes\": [\n            \"4\"\n        ],\n        \"createdAt\": \"2022-08-09T06:43:02.534Z\",\n        \"updatedAt\": \"2022-08-09T06:43:02.534Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62f2020cda284e6fa32dda7d\",\n        \"userId\": \"62f201c5c576f97c96acea1a\",\n        \"title\": \"test video from user1\",\n        \"desc\": \"tes video desc\",\n        \"imgUrl\": \"image\",\n        \"videoUrl\": \"videoUrl\",\n        \"views\": 0,\n        \"tags\": [\n            \"tutorial\"\n        ],\n        \"likes\": [\n            \"9\"\n        ],\n        \"dislikes\": [\n            \"4\"\n        ],\n        \"createdAt\": \"2022-08-09T06:43:24.093Z\",\n        \"updatedAt\": \"2022-08-09T06:43:24.093Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62f20231da284e6fa32dda82\",\n        \"userId\": \"62f2021ada284e6fa32dda7f\",\n        \"title\": \"test video from user2\",\n        \"desc\": \"test video desc from user2\",\n        \"imgUrl\": \"image\",\n        \"videoUrl\": \"videoUrl\",\n        \"views\": 0,\n        \"tags\": [\n            \"tutorial\"\n        ],\n        \"likes\": [\n            \"9\"\n        ],\n        \"dislikes\": [\n            \"4\"\n        ],\n        \"createdAt\": \"2022-08-09T06:44:01.660Z\",\n        \"updatedAt\": \"2022-08-09T06:44:01.660Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62f20264da284e6fa32dda87\",\n        \"userId\": \"62f20251da284e6fa32dda84\",\n        \"title\": \"test video from user3\",\n        \"desc\": \"test video desc from user3\",\n        \"imgUrl\": \"image\",\n        \"videoUrl\": \"videoUrl\",\n        \"views\": 0,\n        \"tags\": [\n            \"tutorial\"\n        ],\n        \"likes\": [\n            \"9\"\n        ],\n        \"dislikes\": [\n            \"4\"\n        ],\n        \"createdAt\": \"2022-08-09T06:44:52.981Z\",\n        \"updatedAt\": \"2022-08-09T06:44:52.981Z\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get By Tags",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8800/api/videos/tags?tags=tutorial",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"videos",
+								"tags"
+							],
+							"query": [
+								{
+									"key": "tags",
+									"value": "tutorial"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get By Tags",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8800/api/videos/tags?tags=js,python",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8800",
+									"path": [
+										"api",
+										"videos",
+										"tags"
+									],
+									"query": [
+										{
+											"key": "tags",
+											"value": "js,python"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "671"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"29f-GfcadsQMJTyUrjZXcIHMSjnGlUk\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 10 Aug 2022 06:59:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"62f20264da284e6fa32dda87\",\n        \"userId\": \"62f20251da284e6fa32dda84\",\n        \"title\": \"test video from user3\",\n        \"desc\": \"test video desc from user3\",\n        \"imgUrl\": \"image\",\n        \"videoUrl\": \"videoUrl\",\n        \"views\": 0,\n        \"tags\": [\n            \"tutorial\",\n            \"python\"\n        ],\n        \"likes\": [\n            \"9\"\n        ],\n        \"dislikes\": [\n            \"4\"\n        ],\n        \"createdAt\": \"2022-08-09T06:44:52.981Z\",\n        \"updatedAt\": \"2022-08-09T06:44:52.981Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62f2029cda284e6fa32dda8a\",\n        \"userId\": \"62f0cedabeb3cf7d7e77d64b\",\n        \"title\": \"test video from darpan\",\n        \"desc\": \"test video desc from darpan\",\n        \"imgUrl\": \"image\",\n        \"videoUrl\": \"videoUrl\",\n        \"views\": 3,\n        \"tags\": [\n            \"tutorial\",\n            \"c\",\n            \"js\"\n        ],\n        \"likes\": [\n            \"9\"\n        ],\n        \"dislikes\": [\n            \"4\"\n        ],\n        \"createdAt\": \"2022-08-09T06:45:48.231Z\",\n        \"updatedAt\": \"2022-08-09T06:45:48.231Z\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get By Search Query",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8800/api/videos/search?q=user1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"videos",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "user1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8800/api/videos/search?q=user1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8800",
+									"path": [
+										"api",
+										"videos",
+										"search"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "user1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "627"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"273-P9+MvBM8GNLiCLGMxbZqrBu/Y8c\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 10 Aug 2022 07:08:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"62f201f6c576f97c96acea1e\",\n        \"userId\": \"62f201c5c576f97c96acea1a\",\n        \"title\": \"test video from user1\",\n        \"desc\": \"tes video desc\",\n        \"imgUrl\": \"image\",\n        \"videoUrl\": \"videoUrl\",\n        \"views\": 0,\n        \"tags\": [\n            \"tutorial\"\n        ],\n        \"likes\": [\n            \"9\"\n        ],\n        \"dislikes\": [\n            \"4\"\n        ],\n        \"createdAt\": \"2022-08-09T06:43:02.534Z\",\n        \"updatedAt\": \"2022-08-09T06:43:02.534Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62f2020cda284e6fa32dda7d\",\n        \"userId\": \"62f201c5c576f97c96acea1a\",\n        \"title\": \"test video from user1\",\n        \"desc\": \"tes video desc\",\n        \"imgUrl\": \"image\",\n        \"videoUrl\": \"videoUrl\",\n        \"views\": 0,\n        \"tags\": [\n            \"tutorial\"\n        ],\n        \"likes\": [\n            \"9\"\n        ],\n        \"dislikes\": [\n            \"4\"\n        ],\n        \"createdAt\": \"2022-08-09T06:43:24.093Z\",\n        \"updatedAt\": \"2022-08-09T06:43:24.093Z\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get a Video By its ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8800/api/videos/find/63257307d0b2a2b5c4186285",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"videos",
+								"find",
+								"63257307d0b2a2b5c4186285"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get a Video By its ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8800/api/videos/find/62f201f6c576f97c96acea1e",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8800",
+									"path": [
+										"api",
+										"videos",
+										"find",
+										"62f201f6c576f97c96acea1e"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "332"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"14c-vkdVVrhCuJccZ8wDKfp+Krjy+9s\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 14 Aug 2022 05:01:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"62f201f6c576f97c96acea1e\",\n    \"userId\": \"62f201c5c576f97c96acea1a\",\n    \"title\": \"test video from user1\",\n    \"desc\": \"tes video desc\",\n    \"imgUrl\": \"image\",\n    \"videoUrl\": \"videoUrl\",\n    \"views\": 0,\n    \"tags\": [\n        \"tutorial\"\n    ],\n    \"likes\": [\n        \"62f0cedabeb3cf7d7e77d64b\"\n    ],\n    \"dislikes\": [],\n    \"createdAt\": \"2022-08-09T06:43:02.534Z\",\n    \"updatedAt\": \"2022-08-14T05:00:51.996Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Comments",
+			"item": [
+				{
+					"name": "Add comments",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"desc\":\"3rd comment by user1\",\r\n    \"videoId\":\"62f2029cda284e6fa32dda8a\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/comments/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"comments",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add comments",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"desc\":\"first comment by user1\",\r\n    \"videoId\":\"62f2029cda284e6fa32dda8a\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8800/api/comments/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8800",
+									"path": [
+										"api",
+										"comments",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "225"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e1-Nn2ZS3ZA00peVU5uY7p3ilzHeVQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 10 Aug 2022 07:35:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"userId\": \"62f201c5c576f97c96acea1a\",\n    \"videoId\": \"62f2029cda284e6fa32dda8a\",\n    \"desc\": \"first comment by user1\",\n    \"_id\": \"62f35fbaad9833e7a98d394d\",\n    \"createdAt\": \"2022-08-10T07:35:22.633Z\",\n    \"updatedAt\": \"2022-08-10T07:35:22.633Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete A Comment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8800/api/comments/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"comments",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get A Comment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8800/api/comments/62f2029cda284e6fa32dda8a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"comments",
+								"62f2029cda284e6fa32dda8a"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get A Comment",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8800/api/comments/62f2029cda284e6fa32dda8a",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8800",
+									"path": [
+										"api",
+										"comments",
+										"62f2029cda284e6fa32dda8a"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "899"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"383-IkUFz91QRldFi/b+ehDbGvY/GjM\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 10 Aug 2022 07:36:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"62f35f9ead9833e7a98d394b\",\n        \"userId\": \"62f201c5c576f97c96acea1a\",\n        \"videoId\": \"62f2029cda284e6fa32dda8a\",\n        \"desc\": \"first comment by user1\",\n        \"createdAt\": \"2022-08-10T07:34:54.204Z\",\n        \"updatedAt\": \"2022-08-10T07:34:54.204Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62f35fbaad9833e7a98d394d\",\n        \"userId\": \"62f201c5c576f97c96acea1a\",\n        \"videoId\": \"62f2029cda284e6fa32dda8a\",\n        \"desc\": \"first comment by user1\",\n        \"createdAt\": \"2022-08-10T07:35:22.633Z\",\n        \"updatedAt\": \"2022-08-10T07:35:22.633Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62f35fddad9833e7a98d394f\",\n        \"userId\": \"62f201c5c576f97c96acea1a\",\n        \"videoId\": \"62f2029cda284e6fa32dda8a\",\n        \"desc\": \"2 comment by user1\",\n        \"createdAt\": \"2022-08-10T07:35:57.779Z\",\n        \"updatedAt\": \"2022-08-10T07:35:57.779Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62f35fe3ad9833e7a98d3951\",\n        \"userId\": \"62f201c5c576f97c96acea1a\",\n        \"videoId\": \"62f2029cda284e6fa32dda8a\",\n        \"desc\": \"3rd comment by user1\",\n        \"createdAt\": \"2022-08-10T07:36:03.214Z\",\n        \"updatedAt\": \"2022-08-10T07:36:03.214Z\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,116 @@
+@import "../../colors.scss";
+
+.Signin-Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 56px);
+  color: map-get($darkTheme, "text");
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.Signin-Wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: map-get($darkTheme, "bgLighter");
+  border: 1px solid map-get($darkTheme, "soft");
+  padding: 20px 50px;
+  gap: 10px;
+}
+
+.Signin-Title {
+  font-size: 24px;
+}
+.Signin-SubTitle {
+  font-weight: 300;
+  font-size: 20px;
+}
+.Signin-Input {
+  border: 1px solid map-get($darkTheme, "soft");
+  border-radius: 3px;
+  padding: 10px;
+  background-color: transparent;
+  width: 100%;
+  color: map-get($darkTheme, "text");
+}
+.Signin-Button {
+  border-radius: 3px;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: map-get($darkTheme, "soft");
+  color: map-get($darkTheme, "textSoft");
+}
+
+.Google {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Signin-More {
+  display: flex;
+  margin-top: 10px;
+  font-size: 12px;
+  color: map-get($darkTheme, "textSoft");
+}
+
+.Signin-Link {
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.Signin-Links {
+  margin-left: 30px;
+  cursor: pointer;
+}
+// LIGH THEMES
+
+.Signin-Container.Light {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 56px);
+  color: map-get($lightTheme, "text");
+  border-radius: 5px;
+}
+
+.Signin-Wrapper.Light {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: map-get($lightTheme, "bgLighter") !important;
+  border: 1px solid map-get($lightTheme, "soft") !important;
+  padding: 20px 50px;
+  gap: 10px;
+}
+
+.Signin-Input.Light {
+  border: 1px solid map-get($lightTheme, "soft");
+  border-radius: 3px;
+  padding: 10px;
+  background-color: transparent;
+  width: 100%;
+  color: map-get($lightTheme, "text");
+}
+
+.Signin-Button.Light {
+  border-radius: 3px;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: map-get($lightTheme, "soft") !important;
+  color: map-get($lightTheme, "textSoft") !important;
+}
+
+.Signin-More.Light {
+  display: flex;
+  margin-top: 10px;
+  font-size: 12px;
+  color: map-get($lightTheme, "textSoft") !important;
+}
