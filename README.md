@@ -1,7 +1,7 @@
 ## Youtube Clone Project.
 This project is clone of youtube app and is only for learning
 purposes. it include only basic funtionality of the youtube app
-like signin,video streaming,upload video to firebase,like,dislike a video and subscribe to a channel. for video demo [click here](#)
+like signin,video streaming,upload video to firebase,like,dislike a video and subscribe to a channel. for video demo [click here](https://www.instagram.com/p/Ci2JkasDhgt/)
 
 <sub>**Note**:**Avoid cloning the assets folder**</sub>
 ## Project Screenshots
